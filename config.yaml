@@ -1,0 +1,4 @@
+exchange_api:
+  timeout: 10
+db:
+  url: "sqlite:///./app.db"
