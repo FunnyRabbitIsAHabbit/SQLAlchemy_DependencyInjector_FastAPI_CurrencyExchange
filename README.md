@@ -8,18 +8,16 @@
 
 ![image](api_description.png)
 
-#### To compose and run a dockerized app run the following commands in a terminal
+### Example installation
+
+#### To compose and run a dockerized app type in the following commands in a terminal
 
 ```zsh
-git clone git@github.com:FunnyRabbitIsAHabbit/SQLAlchemy_DependencyInjector_FastAPI_CurrencyExchange.git
+docker build -t mycurrencyapi https://github.com/FunnyRabbitIsAHabbit/SQLAlchemy_DependencyInjector_FastAPI_CurrencyExchange.git#master
 ```
 
 ```zsh
-cd SQLAlchemy_DependencyInjector_FastAPI_CurrencyExchange
-```
-
-```zsh
-docker-compose -f docker-compose.yaml -p thisservice up -d
+docker run -it -d -p 4040:4040 mycurrencyapi
 ```
 
 _Docker is required for this to work_
