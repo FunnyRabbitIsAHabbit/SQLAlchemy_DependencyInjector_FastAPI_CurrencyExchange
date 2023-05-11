@@ -6,6 +6,8 @@
 
 ### Example usage
 
+_Do keep in mind that currently ports are set to 4040 and 4040, and not 8000:8000 like it could be inferred from the picture below_
+
 ![image](api_description.png)
 
 ### Example installation
