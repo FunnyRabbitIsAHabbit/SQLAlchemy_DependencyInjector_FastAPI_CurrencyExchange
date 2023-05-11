@@ -9,9 +9,6 @@ Application entrypoint (FastAPI)
 @GitHub: FunnyRabbitIsAHabbit
 """
 
-import os
-
-import uvicorn as uvicorn
 from fastapi import FastAPI
 
 from . import endpoints
@@ -32,10 +29,3 @@ def create_app() -> FastAPI:
 
 
 app = create_app()
-
-if __name__ == "__main__":
-    uvicorn.run(
-        app=app,
-        host=os.getenv("HOST"),
-        port=int(os.getenv("PORT"))
-    )
